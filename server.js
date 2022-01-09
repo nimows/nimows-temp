@@ -1,14 +1,14 @@
-const http = require('http')
+const http = require('http') 
 const { fileURLToPath } = require('url')
 
-const port = 80
+const port = 8080
 const host = 'localhost'
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200
     res.setHeader('Content-Type', 'text/html')
     res.setHeader("Access-Control-Allow-Origin", "*");
-    res.end(`
+    res.end(`   
         <h1>hey i'm nigel :]</h1>
         <p>just tore down my old site and new content will be here soon.<br>
         in the meantime, you can find me in these cool places:</p>
